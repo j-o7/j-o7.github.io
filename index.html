@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio & 3D Showcase</title>
+    <style>
+        /* Removes browser defaults so the 3D canvas fills the screen space */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000; /* Matches typical 3D canvas backgrounds */
+        }
+        .embed-container {
+            width: 100%;
+            height: 100vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="embed-container">
+        <!-- Embedding your live Vercel Astro project -->
+        <iframe 
+            src="https://portfolio-henna-nine-ait5m6jmqv.vercel.app/" 
+            title="Astro 3D App"
+            allow="xr-spatial-tracking; fullscreen"
+            loading="lazy">
+        </iframe>
+    </div>
+
+</body>
+</html>
